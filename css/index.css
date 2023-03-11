@@ -345,7 +345,7 @@ footer {
 }
 
 .footer__orta .menu ul li {
-  margin: 0 2em 0 2em;
+  margin: 0 1em 0 1em;
 }
 
 .uyeol {
@@ -364,8 +364,21 @@ footer {
 }
 
 /* mobile media query */
-@media (max-width: 428px) {
+@media only screen and (max-width: 428px) {
   /* header section */
+
+  .menu ul {
+    display: block;
+    text-align: center;
+  }
+
+  .gallery div h2 {
+    font-size: 500%;
+  }
+
+  .text p {
+    font-size: 275%;
+  }
 
   /* gallery section */
   .gallery {
@@ -415,5 +428,16 @@ footer {
     height: auto;
     padding-top: 2.5vh;
     font-size: 2rem;
+    text-align: center;
+  }
+  .footer__orta {
+    display: inline-block;
+  }
+  .mail {
+    font-size: 50%;
+  }
+  .copyright {
+    font-size: 50%;
+    text-align: center;
   }
 }
