@@ -135,6 +135,7 @@ table {
 html {
   max-width: 1920px;
   min-width: 428px;
+  width: 100%;
   font-size: 62.5%;
 }
 
@@ -298,18 +299,61 @@ footer {
 
 /* mobile media query */
 
-@media (max-width: 428px) {
+@media only screen and (max-width: 428px) {
   /* header section */
-  .header-title {
-    width: 75%;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 4rem;
+
+  header {
+    width: 100%;
+    height: 90vh;
   }
 
-  /* menu */
-  .menu {
-    background-image: none;
+  .menu ul {
+    display: block;
+    text-align: center;
+  }
+
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div {
+    text-align: center;
+  }
+
+  /* contact us section */
+  .contact h3 {
+    padding-top: 2.5vh;
+  }
+
+  .info {
+    flex-wrap: wrap;
+  }
+
+  .address {
+    width: 100%;
+    padding-bottom: 2.5vh;
+  }
+
+  .hours {
+    width: 100%;
+  }
+
+  .contacts {
+    width: 100%;
+    padding-bottom: 2.5vh;
   }
 
   /* footer section */
@@ -317,5 +361,16 @@ footer {
     height: auto;
     padding-top: 2.5vh;
     font-size: 2rem;
+    text-align: center;
+  }
+  .footer__orta {
+    display: inline-block;
+  }
+  .mail {
+    font-size: 50%;
+  }
+  .copyright {
+    font-size: 50%;
+    text-align: center;
   }
 }
